@@ -96,15 +96,20 @@ header {
 }
 
 .header-right a {
-	display:inline-block;
-  font-family: Varta;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 15px;
-	line-height: 24px;
-	color: #FFFFFF;
-	text-decoration: none;
-	transition: all 0.6s;
+    line-height: 70px;
+    padding: 0 25px;
+    /*color: white;*/
+    display: block;
+    float: left;
+    transition: all 0.5s;
+    text-shadow: 5px 5px 5px grey;      
+    font-family: Varta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.6s;
 }
 
 .header-right a:hover {
@@ -124,12 +129,12 @@ header {
 
 .main-text{
     display: flex;
-
+    width: 100%;
 }
 
 
 .right-text{
-    margin-left: 20px;
+    margin-left: 100px;
 }
 
 .left-text{
@@ -463,7 +468,7 @@ vertical-align: center;
       font-family: Varta;
       font-style: normal;
       font-weight: normal;
-      font-size: 15px;
+      font-size: 20px;
       color: #FFFFFF;
       text-decoration: none;
       transition: all 0.6s;
