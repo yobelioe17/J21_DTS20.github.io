@@ -6,11 +6,10 @@
     header {
         background: rgba(0, 0, 0, 0.2);	
         }
-         .header-left img {
+        .header-left img {
         width: 63px;
         height: 63px;
-        padding-top: 13px;
-        padding-left: 47px;
+        padding: 25px 0 0 0;
     
       }
     
@@ -18,9 +17,11 @@
         display: inline;
         flex: auto;
         padding-right: 10px;
+
+        /*padding-top: 13px;*/
      }
     
-    .header-right {
+     .header-right {
         text-align: right;
         float: right;
         padding: 20px;
@@ -30,7 +31,7 @@
     /* main */
 
     .main-content{
-        padding: 64px 0px 12px 23px;
+        /* padding: 64px 0px 12px 23px; */
         background-image: url(tablet.jpg);
         background-size: cover;
         }
@@ -41,19 +42,28 @@
     } 
 
     .main-text{
-        display:flex;
+        /*display:flex;*/
         flex-direction: column;
         
     }
 
     .right-text{
-        font-size: 22px;
-        margin-top: -30px;
+        text-align: left;
+        margin-left: 0;
+        /*font-size: 17px;*/
+        /*margin-top: -30px;*/
+    }
+    .left-text h1{
+        padding-bottom: 0;
     }
 
-    .right-text p{
+    /*.right-text p{
         float: left;
         margin-left: 0;
+    }*/
+    .contents{
+        overflow-x: scroll !important;
+
     }
 
 */
@@ -151,73 +161,83 @@
 @media (max-width:670px){
 
     /* header */
+    .contents{
+        overflow-x: none !important;
+        display: block;
+        overflow-y: visible;
+        height: 470px;
+    }
 
     header {
-        background: rgba(0, 0, 0, 0.3);	
+        background: rgba(0, 0, 0, 0.2); 
         }
-      .header-left img {
-          position: absolute;
-        width: 41px;
-        height: 41px;
-        padding-top: 4px;
-        padding-left: 12px;
+        .header-left img {
+        width: 63px;
+        height: 63px;
+        padding: 25px 10px 0 10px;
     
       }
     
-      .header-right a {
-         display:inline-block;
-        font-family: Varta;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 9px;
-        line-height: 15px;
-        color: #FFFFFF;
-        text-decoration: none;
-     }
-    
-     .header-right li {
+      .header-right li {
         display: inline;
         flex: auto;
         padding-right: 10px;
-    }
+
+        /*padding-top: 13px;*/
+     }
     
-    .header-right {
+     .header-right {
         text-align: right;
         float: right;
-        padding: 10px;
+        padding: 20px;
     
-     }
+      }
+      .header-right a {
+            font-size: 10px;
+        padding: 0 10px;
+        line-height: 50px;
+}
 
 
      /* main */
 
     .main-content{
-    padding: 64px 119px 31px 23px;
-    background-image: url(smartphone.jpg);
-    background-size: cover;
-    }
+        /* padding: 64px 0px 12px 23px; */
+        background-image: url(tablet.jpg);
+        background-size: cover;
+        }
 
     .left-text{
-        margin-left: 0;
-        font-size: 15px;
-        margin-bottom:0;
-    }
- 
+        font-size: 20px;
+        text-align: left;
+
+    } 
 
     .main-text{
-        display:flex;
+        /*display:flex;*/
         flex-direction: column;
+        
     }
 
     .right-text{
-        font-size: 6px;
-        margin-top: -30px;
+        text-align: left;
+        margin-left: 0;
+        font-size: 10px;
+
+        /*margin-top: -30px;*/
+    }
+    .left-text h1{
+        padding-bottom: 0;
     }
 
-    .right-text p{
-        padding-left: 0;
-    }
+    /*.right-text p{
+        float: left;
+        margin-left: 0;
+    }*/
+    .contents{
+        overflow-x: scroll !important;
 
+    }
     /* extra 1 */
 
 
@@ -372,9 +392,10 @@
 	.footer-logo img{
   		height: 40px;
 	}
-	footer{
-		height: 50px;
-        /*margin-top: 100px;*/
+	.footer{
+        height: 50px;
+        position: unset;
+        margin-top: 30px;
 	}
  
 }
